@@ -1,0 +1,120 @@
+.about-section {
+  padding: 80px 20px;
+  transition: background 0.3s ease, color 0.3s ease;
+  background: #f0f4ff;
+  color: #1e293b;
+  text-align: center;
+}
+
+.dark .about-section {
+  background: #0c1122;
+  color: #f3f4f6;
+}
+
+/* Wrapper to center everything and limit width */
+.about-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.about-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-subtitle {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  color: #3b82f6;
+}
+
+.dark .about-subtitle {
+  color: #60a5fa;
+}
+
+/* Layout: text + image */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* Push text left and image right */
+    gap: 3rem;
+  }
+}
+
+/* Text area */
+.about-text {
+  flex: 1;
+  max-width: 600px;
+  margin-left: -20px;
+  transition: margin 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .about-text {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+/* Skills section */
+.skills-heading {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+  .skills-list {
+    justify-content: center;
+  }
+}
+
+.skill-badge {
+  padding: 6px 12px;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Image styling */
+.about-image {
+  flex-shrink: 0;
+  margin-right: -10px;
+  transition: margin 0.3s ease;
+}
+
+.about-image img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #3b82f6;
+  background-color: white;
+  box-shadow: 0 0 0 8px rgba(59, 130, 246, 0.2);
+}
+
+.dark .about-image img {
+  background-color: #0f172a;
+  box-shadow: 0 0 0 8px rgba(59, 130, 246, 0.4);
+}

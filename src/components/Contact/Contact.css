@@ -1,0 +1,123 @@
+/* Base Section Styling */
+.contact-section {
+  padding: 60px 20px;
+  background-color: #f0f4ff;
+  color: #1e293b;
+  transition: background 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+}
+
+.dark .contact-section {
+  background-color: #0c1122;
+  color: #f3f4f6;
+}
+
+/* Wrapper */
+.contact-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark .contact-wrapper {
+  background-color: #0f172a;
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.05);
+}
+
+/* Title and Subtitle */
+.contact-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.contact-subtitle {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #3b82f6;
+}
+
+.dark .contact-subtitle {
+  color: #60a5fa;
+}
+
+/* Form Layout */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form label {
+  font-weight: 600;
+}
+
+/* Inputs and Textarea */
+.contact-form input,
+.contact-form textarea {
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border 0.2s ease, background 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+
+/* Dark Mode Input */
+.dark .contact-form input,
+.dark .contact-form textarea {
+  background-color: #1e293b;
+  color: #f3f4f6;
+  border: 1px solid #475569;
+}
+
+/* Submit Button */
+.send-btn {
+  padding: 12px;
+  font-weight: bold;
+  border: none;
+  background-color: #020617;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dark .send-btn {
+  background-color: #f3f4f6;
+  color: #020617;
+}
+
+.send-btn:hover {
+  opacity: 0.9;
+}
+
+/* Success Message */
+.success-message {
+  text-align: center;
+  color: green;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 20px;
+  background-color: #e6ffe6;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #a1e6a1;
+}
+
+.dark .success-message {
+  background-color: #163b16;
+  color: #b0ffb0;
+  border: 1px solid #35b435;
+}
