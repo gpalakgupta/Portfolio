@@ -31,6 +31,12 @@ const projects = [
     tech: ["MERN Stack", "Razorpay", "EJS"],
     github: "https://github.com/gpalakgupta/E-commerce",
   },
+  {
+    title: "AI MediBot",
+    description: "A chatbot for medical assistance with ML integration.",
+    tech: ["Python", "ML", "React"],
+    github: "https://github.com/gpalakgupta/Medibot",
+  },
 ];
 
 const Projects = () => {
